@@ -1,0 +1,76 @@
+{
+ "state": "t0",
+ "displacement_mm": 0,
+ "resolution": "coarse",
+ "ends": "periodic",
+ "tau": 1.5,
+ "porosity_full_resolution": 0.953372752683668,
+ "dataset": "doi:10.18419/DARUS-3010 (CC BY 4.0)",
+ "coarsening_rule": "quarter",
+ "coarsening_threshold": 0.25,
+ "geometry": {
+  "ends": "periodic",
+  "crop_slices": null,
+  "sample_slices": 296,
+  "domain_slices": 296,
+  "buffer_voxels": 0,
+  "sample_area_fraction": 0.6821191111111111,
+  "porosity_in_cylinder": 0.9334892696873139,
+  "radius_voxels": 174.75
+ },
+ "dx_m": 0.0001496,
+ "fluid_nodes": 26504755,
+ "grid_zyx": [
+  296,
+  375,
+  375
+ ],
+ "valid": true,
+ "termination": "converged",
+ "iterations": 11000,
+ "k_box_m2": 1.63211770959693e-07,
+ "k_sample_apparent_m2": 2.392716584261004e-07,
+ "k_sample_m2": 2.392716584261004e-07,
+ "diagnostics": {
+  "iterations": 11000,
+  "superficial_velocity": [
+   2.8893210345648783e-12,
+   -1.974063470890888e-12,
+   2.187809706807632e-05
+  ],
+  "velocity_rms": 3.316799600419706e-05,
+  "mach_max": 0.0002615767724975892,
+  "rho_min": 0.9999139219894604,
+  "rho_max": 1.0000901150584414,
+  "density_range": 0.00017619306898097875,
+  "mass": 26504754.999793306,
+  "mass_drift": 7.798374552787258e-12,
+  "reynolds_pore": 0.00010307687701229705,
+  "reynolds_length_lu": 1.0,
+  "reynolds_velocity": "norm(superficial_velocity)/porosity",
+  "field_residual": 2.5192379240291514e-08,
+  "field_change_rms": 8.35580733978206e-13,
+  "vector_change": [
+   3.383595367980249e-13,
+   4.281793324305395e-15,
+   6.14049758848427e-15
+  ],
+  "consecutive_passes": 3
+ },
+ "plane_flux": {
+  "mean": 3.0766074001982324,
+  "cv": 8.44719608957431e-06,
+  "max_rel_dev": 1.5717485692290367e-05
+ },
+ "regime": {
+  "mach_max": 0.0002615767724975892,
+  "u_mean_pore_lu": 3.662031552822552e-05,
+  "reynolds_pore": 0.0018652861251676367,
+  "pore_length_lu": 16.978609625668447
+ },
+ "wall_ring": {
+  "area_share": 0.18477320350697957,
+  "flow_share": 0.1472495859662911
+ },
+ "wall_s": 904.7784762382507
+}

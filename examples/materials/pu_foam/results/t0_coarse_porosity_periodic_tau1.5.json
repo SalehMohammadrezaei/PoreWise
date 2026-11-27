@@ -1,0 +1,76 @@
+{
+ "state": "t0",
+ "displacement_mm": 0,
+ "resolution": "coarse",
+ "ends": "periodic",
+ "tau": 1.5,
+ "porosity_full_resolution": 0.953372752683668,
+ "dataset": "doi:10.18419/DARUS-3010 (CC BY 4.0)",
+ "coarsening_rule": "porosity",
+ "coarsening_threshold": 0.41567331552505493,
+ "geometry": {
+  "ends": "periodic",
+  "crop_slices": null,
+  "sample_slices": 296,
+  "domain_slices": 296,
+  "buffer_voxels": 0,
+  "sample_area_fraction": 0.6821191111111111,
+  "porosity_in_cylinder": 0.9533723346794769,
+  "radius_voxels": 174.75
+ },
+ "dx_m": 0.0001496,
+ "fluid_nodes": 27069299,
+ "grid_zyx": [
+  296,
+  375,
+  375
+ ],
+ "valid": true,
+ "termination": "converged",
+ "iterations": 8500,
+ "k_box_m2": 2.1189615644981768e-07,
+ "k_sample_apparent_m2": 3.106439227375667e-07,
+ "k_sample_m2": 3.106439227375667e-07,
+ "diagnostics": {
+  "iterations": 8500,
+  "superficial_velocity": [
+   2.3841087840279184e-12,
+   -2.874877684578726e-12,
+   2.840410744826905e-05
+  ],
+  "velocity_rms": 4.124260760354783e-05,
+  "mach_max": 0.0002830659609901158,
+  "rho_min": 0.9999096870906501,
+  "rho_max": 1.0000901709081662,
+  "density_range": 0.00018048381751611942,
+  "mass": 27069298.99987672,
+  "mass_drift": 4.5542750053113726e-12,
+  "reynolds_pore": 0.0001310326845775588,
+  "reynolds_length_lu": 1.0,
+  "reynolds_velocity": "norm(superficial_velocity)/porosity",
+  "field_residual": 2.1923670859052053e-08,
+  "field_change_rms": 9.041893544692201e-13,
+  "vector_change": [
+   3.3671998751656683e-13,
+   8.462837852335127e-14,
+   4.542654636783758e-15
+  ],
+  "consecutive_passes": 3
+ },
+ "plane_flux": {
+  "mean": 3.994327609912834,
+  "cv": 7.680522007320556e-06,
+  "max_rel_dev": 1.4097634090770583e-05
+ },
+ "regime": {
+  "mach_max": 0.0002830659609901158,
+  "u_mean_pore_lu": 4.59160654863633e-05,
+  "reynolds_pore": 0.0023387728543187722,
+  "pore_length_lu": 16.978609625668447
+ },
+ "wall_ring": {
+  "area_share": 0.18477320350697957,
+  "flow_share": 0.1420085125089448
+ },
+ "wall_s": 600.7617423534393
+}

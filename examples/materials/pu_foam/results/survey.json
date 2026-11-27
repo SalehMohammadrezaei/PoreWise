@@ -1,0 +1,79 @@
+[
+ {
+  "state": "t0",
+  "displacement_mm": 0,
+  "slices": 593,
+  "length_mm": 44.3564,
+  "diameter_mm": 52.2852,
+  "porosity": 0.953372752683668,
+  "solid_volume_mm3": 4440.618838808646,
+  "solid_volume_rel_t0": 1.0,
+  "axial_strain_vs_t0": 0.0
+ },
+ {
+  "state": "t1",
+  "displacement_mm": 5,
+  "slices": 530,
+  "length_mm": 39.644,
+  "diameter_mm": 52.2852,
+  "porosity": 0.949141979798536,
+  "solid_volume_mm3": 4328.9677062755345,
+  "solid_volume_rel_t0": 0.9748568529328976,
+  "axial_strain_vs_t0": 0.10623946037099496
+ },
+ {
+  "state": "t2",
+  "displacement_mm": 10,
+  "slices": 463,
+  "length_mm": 34.632400000000004,
+  "diameter_mm": 52.2852,
+  "porosity": 0.9389279865596994,
+  "solid_volume_mm3": 4541.2170071964965,
+  "solid_volume_rel_t0": 1.0226540876484773,
+  "axial_strain_vs_t0": 0.21922428330522759
+ },
+ {
+  "state": "t3",
+  "displacement_mm": 15,
+  "slices": 395,
+  "length_mm": 29.546,
+  "diameter_mm": 52.2852,
+  "porosity": 0.9266290148278233,
+  "solid_volume_mm3": 4654.472541521639,
+  "solid_volume_rel_t0": 1.0481585361130359,
+  "axial_strain_vs_t0": 0.33389544688026984
+ },
+ {
+  "state": "t4",
+  "displacement_mm": 20,
+  "slices": 331,
+  "length_mm": 24.7588,
+  "diameter_mm": 52.2852,
+  "porosity": 0.9059504733559635,
+  "solid_volume_mm3": 4999.581291935012,
+  "solid_volume_rel_t0": 1.125874900192138,
+  "axial_strain_vs_t0": 0.4418212478920742
+ },
+ {
+  "state": "t5",
+  "displacement_mm": 25,
+  "slices": 263,
+  "length_mm": 19.6724,
+  "diameter_mm": 52.2852,
+  "porosity": 0.8676897528227321,
+  "solid_volume_mm3": 5588.538609862953,
+  "solid_volume_rel_t0": 1.2585044591132433,
+  "axial_strain_vs_t0": 0.5564924114671164
+ },
+ {
+  "state": "t6",
+  "displacement_mm": 0,
+  "slices": 593,
+  "length_mm": 44.3564,
+  "diameter_mm": 52.2852,
+  "porosity": 0.9539388413108353,
+  "solid_volume_mm3": 4386.70650284808,
+  "solid_volume_rel_t0": 0.9878592741422884,
+  "axial_strain_vs_t0": 0.0
+ }
+]

@@ -113,12 +113,34 @@ We recommend `collision="trt"` with `tau=0.6` for rock images.
 On a 384-cube sandstone crop (porosity 0.25) `cuda-sparse` processes 4,800 million voxels
 per second in 4 GB on an RTX 6000 Ada, and `numba-sparse` reaches 1,000 million on 96 cores.
 
+## Materials examples
+
+Two worked examples apply PoreWise to engineering materials. Each has a page with the method,
+the verification runs, a comparison with published data and the limitations.
+
+<p align="center">
+  <img src="docs/figures/materials/woven_preform.png" width="49%" alt="Computed resin speed between the plies of a woven carbon preform">
+  <img src="docs/figures/materials/pu_foam.png" width="49%" alt="Streamlines of the computed flow through a micro-CT scan of an open-cell foam">
+</p>
+
+| Example | Geometry | Result |
+|---|---|---|
+| [Woven composite preform](docs/examples/woven_preform.md) | generated two-ply 3K carbon plain weave in a closed mould, two compaction states, tows impermeable | in-plane permeability 5.0 × 10<sup>-11</sup> m² at fibre volume fraction 0.45 and 1.9 × 10<sup>-11</sup> m² at 0.57 (5 µm grid; changes of 8 % and 2 % from the 10 µm grid) |
+| [Open-cell polyurethane foam](docs/examples/pu_foam.md) | micro-CT scan of a 10 ppi foam at seven stages of a compression test (Ruf & Steeb 2024, [DaRUS-3010](https://doi.org/10.18419/DARUS-3010), CC BY 4.0) | axial permeability 3.1 × 10<sup>-7</sup> m² uncompressed, falling to 8.0 × 10<sup>-8</sup> m² at 50 % nominal strain (149.6 µm grid); 2.9 × 10<sup>-7</sup> m² uncompressed at the scan's 74.8 µm |
+
+The figures are drawn from the computed velocity fields. Left: the upper ply is lifted for display.
+Right: the struts are faded out near the top for display. Neither example changes the solver or
+the public API; the code is in `examples/materials/`, and the checks behind every number are in
+[materials_verification.md](docs/examples/materials_verification.md).
+
 ## Documentation
 
 - [Numerical method, conventions and units](docs/numerical_limits.md)
 - [Verification and performance](docs/verification.md): analytical channels and pipes, sphere
   arrays, a published micromodel benchmark and published 1024-cube rock benchmarks
 - [Reproducing the benchmarks](docs/benchmark_reproduction.md)
+- Materials examples: [woven composite preform](docs/examples/woven_preform.md), [open-cell foam](docs/examples/pu_foam.md)
+  and their [verification](docs/examples/materials_verification.md)
 
 ## Citing
 

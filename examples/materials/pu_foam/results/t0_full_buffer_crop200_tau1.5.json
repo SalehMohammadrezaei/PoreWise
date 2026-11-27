@@ -1,0 +1,74 @@
+{
+ "state": "t0",
+ "displacement_mm": 0,
+ "resolution": "full",
+ "ends": "buffer",
+ "tau": 1.5,
+ "porosity_full_resolution": 0.953372752683668,
+ "dataset": "doi:10.18419/DARUS-3010 (CC BY 4.0)",
+ "geometry": {
+  "ends": "buffer",
+  "crop_slices": 200,
+  "sample_slices": 200,
+  "domain_slices": 240,
+  "buffer_voxels": 20,
+  "sample_area_fraction": 0.6804686516513269,
+  "porosity_in_cylinder": 0.955035267141759,
+  "radius_voxels": 349.5
+ },
+ "dx_m": 7.48e-05,
+ "fluid_nodes": 88657042,
+ "grid_zyx": [
+  240,
+  751,
+  751
+ ],
+ "valid": true,
+ "termination": "converged",
+ "iterations": 14000,
+ "k_box_m2": 2.3603783416048264e-07,
+ "k_sample_apparent_m2": 3.468753976949239e-07,
+ "k_sample_m2": 2.8925858103373385e-07,
+ "diagnostics": {
+  "iterations": 14000,
+  "superficial_velocity": [
+   1.4213604116706787e-12,
+   2.8723619568499393e-11,
+   0.0001265609365583531
+  ],
+  "velocity_rms": 0.00018384780716633865,
+  "mach_max": 0.0013440980418705614,
+  "rho_min": 0.9996812018821972,
+  "rho_max": 1.0003149601530448,
+  "density_range": 0.0006337582708475509,
+  "mass": 88657042.00030066,
+  "mass_drift": 3.3912786015155363e-12,
+  "reynolds_pore": 0.0005796940105614135,
+  "reynolds_length_lu": 1.0,
+  "reynolds_velocity": "norm(superficial_velocity)/porosity",
+  "field_residual": 1.4266836107729239e-08,
+  "field_change_rms": 2.6229265336075627e-12,
+  "vector_change": [
+   2.2455581359319068e-13,
+   1.4560919940281373e-13,
+   4.842941369112563e-15
+  ],
+  "consecutive_passes": 3
+ },
+ "plane_flux": {
+  "mean": 71.3804947798477,
+  "cv": 3.2935876579684946e-05,
+  "max_rel_dev": 5.045667269576448e-05
+ },
+ "regime": {
+  "mach_max": 0.0013440980418705614,
+  "u_mean_pore_lu": 0.00020250446148949289,
+  "reynolds_pore": 0.020629465194517856,
+  "pore_length_lu": 33.957219251336895
+ },
+ "wall_ring": {
+  "area_share": 0.184936878721159,
+  "flow_share": 0.14318421361445247
+ },
+ "wall_s": 1550.2573132514954
+}

@@ -1,5 +1,37 @@
 # Changelog
 
+## Unreleased
+
+### Materials engineering examples (`examples/materials/`)
+Two worked examples that apply PoreWise beyond rock images. The solver and the public API are
+unchanged; everything below is example code, tests and documentation.
+
+- **Woven composite preform** (`woven_preform/`): an idealised 3K carbon plain-weave
+  generator.
+  - Elliptical tows on crimped paths, interference removal, nesting by contact, mould on the
+    tow crests (no tow-free slot), and an infinite-laminate variant.
+  - In-plane permeability tensor at two compaction states for the closed-mould stacking, with a
+    resolution study (20, 10, 5 um), a tau check and a flow-path analysis.
+- **Open-cell PU foam** (`pu_foam/`): the micro-CT scans of Ruf & Steeb (DaRUS-3010,
+  CC BY 4.0).
+  - Download with checksums, cylinder fitting, a sealed-core domain, porosity-preserving
+    coarsening, and fluid-buffer, mirrored or periodic ends.
+  - Axial permeability per sample cross-section for seven compression states on a 2x coarsened
+    grid, and for the uncompressed state at scan resolution.
+- **Shared helpers** (`common.py`):
+  - Permeability per sample cross-section (PoreWise's k is per grid cross-section) and a series
+    correction for buffer layers.
+  - Plane-flux conservation and flow-regime checks.
+  - A vectorised form of the wall-safe streamline rule of `benchmarks/rock_streamlines.py`.
+- **Figures and docs:** analysis figures, Blender scene scripts for the rendered figures
+  (`render/`, optional), documentation generated from the run records (`make_docs.py`,
+  `docs/examples/`) and a Materials examples section in the README.
+- **Tests:** `tests/test_materials_examples.py`.
+  - Weave topology, mould contact, periodicity, interference correction, fibre bookkeeping.
+  - Normalisation (including a pipe-in-sleeve Poiseuille check), tracer equivalence with the
+    reference rule, and no traced point next to a solid.
+  - Foam domain construction and porosity-preserving coarsening.
+
 ## 0.1.0
 
 First public release. The project was developed as LBM-Permeability and renamed PoreWise;
