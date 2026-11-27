@@ -1,0 +1,76 @@
+{
+ "state": "t0",
+ "displacement_mm": 0,
+ "resolution": "coarse",
+ "ends": "periodic",
+ "tau": 1.0,
+ "porosity_full_resolution": 0.953372752683668,
+ "dataset": "doi:10.18419/DARUS-3010 (CC BY 4.0)",
+ "coarsening_rule": "quarter",
+ "coarsening_threshold": 0.25,
+ "geometry": {
+  "ends": "periodic",
+  "crop_slices": null,
+  "sample_slices": 296,
+  "domain_slices": 296,
+  "buffer_voxels": 0,
+  "sample_area_fraction": 0.6821191111111111,
+  "porosity_in_cylinder": 0.9334892696873139,
+  "radius_voxels": 174.75
+ },
+ "dx_m": 0.0001496,
+ "fluid_nodes": 26504755,
+ "grid_zyx": [
+  296,
+  375,
+  375
+ ],
+ "valid": true,
+ "termination": "converged",
+ "iterations": 5000,
+ "k_box_m2": 1.6321175397687354e-07,
+ "k_sample_apparent_m2": 2.3927163352895386e-07,
+ "k_sample_m2": 2.3927163352895386e-07,
+ "diagnostics": {
+  "iterations": 5000,
+  "superficial_velocity": [
+   -1.2941210119214034e-12,
+   -3.87636529098657e-12,
+   4.375618958315048e-05
+  ],
+  "velocity_rms": 6.633598209605335e-05,
+  "mach_max": 0.0005231396829098328,
+  "rho_min": 0.9999139198136222,
+  "rho_max": 1.0000901219567029,
+  "density_range": 0.0001762021430806726,
+  "mass": 26504755.00001197,
+  "mass_drift": 4.5159284547086477e-13,
+  "reynolds_pore": 0.0004123074651469851,
+  "reynolds_length_lu": 1.0,
+  "reynolds_velocity": "norm(superficial_velocity)/porosity",
+  "field_residual": 1.5794862250890245e-08,
+  "field_change_rms": 1.0477676994846842e-12,
+  "vector_change": [
+   9.424498917712552e-14,
+   4.370680358908477e-14,
+   4.295649664969037e-15
+  ],
+  "consecutive_passes": 3
+ },
+ "plane_flux": {
+  "mean": 6.153214160130536,
+  "cv": 8.447644882054093e-06,
+  "max_rel_dev": 1.5731686523023924e-05
+ },
+ "regime": {
+  "mach_max": 0.0005231396829098328,
+  "u_mean_pore_lu": 7.324063814936969e-05,
+  "reynolds_pore": 0.007461145223237928,
+  "pore_length_lu": 16.978609625668447
+ },
+ "wall_ring": {
+  "area_share": 0.18477320350697957,
+  "flow_share": 0.147249668064228
+ },
+ "wall_s": 368.51092314720154
+}

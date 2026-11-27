@@ -1,0 +1,76 @@
+{
+ "state": "t1",
+ "displacement_mm": 5,
+ "resolution": "coarse",
+ "ends": "buffer",
+ "tau": 1.5,
+ "porosity_full_resolution": 0.949141979798536,
+ "dataset": "doi:10.18419/DARUS-3010 (CC BY 4.0)",
+ "coarsening_rule": "porosity",
+ "coarsening_threshold": 0.41589832305908203,
+ "geometry": {
+  "ends": "buffer",
+  "crop_slices": null,
+  "sample_slices": 265,
+  "domain_slices": 285,
+  "buffer_voxels": 10,
+  "sample_area_fraction": 0.6821191111111111,
+  "porosity_in_cylinder": 0.9491199210687661,
+  "radius_voxels": 174.75
+ },
+ "dx_m": 0.0001496,
+ "fluid_nodes": 26044704,
+ "grid_zyx": [
+  285,
+  375,
+  375
+ ],
+ "valid": true,
+ "termination": "converged",
+ "iterations": 6500,
+ "k_box_m2": 1.9595012644132525e-07,
+ "k_sample_apparent_m2": 2.872667298855474e-07,
+ "k_sample_m2": 2.6717070627942245e-07,
+ "diagnostics": {
+  "iterations": 6500,
+  "superficial_velocity": [
+   -9.776691861787509e-12,
+   8.123263513989505e-12,
+   2.6266585195279017e-05
+  ],
+  "velocity_rms": 3.826452683410971e-05,
+  "mach_max": 0.00027332165653603103,
+  "rho_min": 0.9998560368002816,
+  "rho_max": 1.0001117650892868,
+  "density_range": 0.00025572828900521927,
+  "mass": 26044703.999842666,
+  "mass_drift": 6.0409175878996545e-12,
+  "reynolds_pore": 0.00012125868101011997,
+  "reynolds_length_lu": 1.0,
+  "reynolds_velocity": "norm(superficial_velocity)/porosity",
+  "field_residual": 2.845105120309162e-08,
+  "field_change_rms": 1.0886660122193287e-12,
+  "vector_change": [
+   2.9795115264601004e-13,
+   3.2212368628606757e-13,
+   3.4370225307327196e-15
+  ],
+  "consecutive_passes": 3
+ },
+ "plane_flux": {
+  "mean": 3.6937385430861127,
+  "cv": 2.6943433015799266e-05,
+  "max_rel_dev": 7.170060432715175e-05
+ },
+ "regime": {
+  "mach_max": 0.00027332165653603103,
+  "u_mean_pore_lu": 4.253397969926292e-05,
+  "reynolds_pore": 0.0021665035114196755,
+  "pore_length_lu": 16.978609625668447
+ },
+ "wall_ring": {
+  "area_share": 0.18477320350697957,
+  "flow_share": 0.14315695567542172
+ },
+ "wall_s": 490.0573709011078
+}
