@@ -1,0 +1,123 @@
+{
+ "state": "compacted",
+ "stack": "mould",
+ "weave": {
+  "name": "compacted",
+  "spacing_mm": 2.0,
+  "width_mm": 1.85,
+  "intra_tow_vf": 0.72,
+  "beta": 1.5,
+  "plies": 2,
+  "shift": [
+   0.5,
+   0.5
+  ],
+  "fibre": {
+   "diameter_um": 7.0,
+   "filaments": 3000,
+   "density_g_cm3": 1.78
+  },
+  "thickness_mm": 0.11036036036036037,
+  "amplitude_mm": 0.055180180180180186,
+  "cell_mm": 4.0,
+  "tow_fibre_area_mm2": 0.1154535300194249,
+  "gap_mm": 0.1499999999999999
+ },
+ "geometry": {
+  "dx_mm": 0.01,
+  "grid_zyx": [
+   43,
+   400,
+   400
+  ],
+  "cavity_layers": 41,
+  "cavity_mm": 0.409392511654723,
+  "cavity_voxelised_mm": 0.41000000000000003,
+  "mould_offset_mm": 0.0003037441726385093,
+  "tow_volume_fraction": 0.7823609756097561,
+  "overlap_before_correction_fraction": 0.0010163108539505187,
+  "tow_free_layers": 0,
+  "layout": {
+   "ply_z0_mm": [
+    0.0,
+    0.18867208333374957
+   ],
+   "ply_shift": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "mould_bottom_mm": -0.11036021416048672,
+   "mould_top_mm": 0.2990322974942363,
+   "cavity_mm": 0.409392511654723
+  },
+  "crimp_factor": 1.0026634514135029,
+  "fibre_thickness_per_ply_mm": 0.11576103488714903,
+  "areal_weight_g_m2": 206.05464209912532,
+  "fibre_volume_fraction": 0.5655259028517873,
+  "intra_tow_vf": 0.72
+ },
+ "plain_weave_alternates": true,
+ "tau": 2.5,
+ "collision": "trt",
+ "precision": "float64",
+ "loads": {
+  "x": {
+   "valid": true,
+   "termination": "converged",
+   "iterations": 122500,
+   "k_m2": 1.8660777380089853e-11,
+   "k_cross_m2": 2.8162180661124223e-15,
+   "wall_s": 421.25291299819946,
+   "diagnostics": {
+    "iterations": 122500,
+    "superficial_velocity": [
+     2.7991166070134774e-07,
+     4.2243270991686327e-11,
+     3.0354757279444694e-20
+    ],
+    "velocity_rms": 1.0084384132089944e-06,
+    "mach_max": 1.8663420590096886e-05,
+    "rho_min": 0.9998067452450482,
+    "rho_max": 1.0001932547494523,
+    "density_range": 0.0003865095044041089,
+    "mass": 1427711.9999972219,
+    "mass_drift": 1.9458653006194333e-12,
+    "reynolds_pore": 2.0232990766582905e-06,
+    "reynolds_length_lu": 1.0,
+    "reynolds_velocity": "norm(superficial_velocity)/porosity",
+    "field_residual": 1.921883627608825e-06,
+    "field_change_rms": 1.9381012757981896e-12,
+    "vector_change": [
+     6.831274429255365e-14,
+     1.5265282162542276e-20,
+     1.2655192270811987e-20
+    ],
+    "consecutive_passes": 3
+   },
+   "plane_flux": {
+    "mean": 0.004814480564063184,
+    "cv": 1.0204683885081883e-05,
+    "max_rel_dev": 1.4747891230459942e-05
+   },
+   "regime": {
+    "mach_max": 1.8663420590096886e-05,
+    "u_mean_pore_lu": 1.3626928850065948e-06,
+    "reynolds_pore": 3.066058991264837e-05,
+    "pore_length_lu": 14.999999999999991
+   },
+   "flow_paths": {
+    "mould_layer_bottom_share": 0.046801973463650115,
+    "mould_layer_top_share": 0.04680197346368649,
+    "mould_layers_volume_share": 0.04878048780487805,
+    "line_of_sight_area_share": 0.07658536585365854,
+    "line_of_sight_flow_share": 0.6489961687852133
+   }
+  }
+ }
+}
